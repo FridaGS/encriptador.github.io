@@ -105,13 +105,18 @@ function renderText(text){
         const textContainer = document.createElement("div");
         const textH1 = document.createElement("h1");
         const textP = document.createElement("p");
+        const img = document.createElement("img");
         
+
         textContainer.classList.add("result-text");
 
         textH1.innerHTML = "Ningún mensaje fue encontrado";
         textP.innerHTML = "Ingresa el texto que desees encriptar o desencriptar";
 
+        img.setAttribute('src', "./img/find.png");
+
         resultTextContainer.appendChild(textContainer);
+        textContainer.appendChild(img);
         textContainer.appendChild(textH1);
         textContainer.appendChild(textP);
     }
