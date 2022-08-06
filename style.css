@@ -98,7 +98,6 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid purple;
     display: flex;
     flex-direction: column;
 }
@@ -120,8 +119,6 @@ main{
     font-size: 16px;
     line-height: 150%;
     color: #495057;
-    border: 1px solid #0A3871;
-    
 }
 .text-result{
     justify-content: center;
@@ -130,7 +127,6 @@ main{
     margin: 35px 20px;
     width: 100%;
     text-align: center;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -143,7 +139,6 @@ main{
     text-align: justify;
     margin: 0 20px;
     text-align: center;
-    border: 1px solid green;
     word-break:break-all;
     width: 90%;
     align-self: center;
