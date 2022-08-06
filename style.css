@@ -169,6 +169,10 @@ footer{
     justify-content: center;
     align-items: center;
 }
+footer p{
+    text-align: center;
+    font-size: .5em;
+}
 
 /* For tablets*/
 @media only screen and (min-width: 768px){
@@ -189,6 +193,10 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    footer p{
+        text-align: center;
+        font-size: 1em;
     }
 }
 /* For desktop */
@@ -215,5 +223,9 @@ footer{
     }
     .text-result{
         margin: 0;
+    }
+    footer p{
+        text-align: center;
+        font-size: 1em;
     }
 }
