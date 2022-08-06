@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
     font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -11,6 +10,7 @@ body{
     min-height: 100vh;
     background-color: #F3F5FC;
     font-family: Inter, sans-serif;
+    padding-bottom: 60px;
 }
 header{
     width: 100%;
@@ -68,6 +68,11 @@ main{
     border-radius: 25px;
     height: 65px;
 }
+.buttons-container button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .encrypt{
     background-color: #0A3871;
     color: white;
@@ -93,6 +98,9 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
 }
 .result-text img{
     display:none;
@@ -112,11 +120,20 @@ main{
     font-size: 16px;
     line-height: 150%;
     color: #495057;
+    border: 1px solid #0A3871;
+    
 }
 .text-result{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 35px 20px;
     width: 100%;
     text-align: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .text-result p{
     font-style: normal;
@@ -126,6 +143,10 @@ main{
     text-align: justify;
     margin: 0 20px;
     text-align: center;
+    border: 1px solid green;
+    word-break:break-all;
+    width: 90%;
+    align-self: center;
 }
 .text-result button{
     margin-top: 30px;
@@ -136,6 +157,10 @@ main{
     height: 65px;
     color: #0A3871;
     background-color: transparent;
+}
+.text-result button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 footer{
     bottom: 0;
@@ -154,6 +179,7 @@ footer{
 @media only screen and (min-width: 768px){
     body{
         padding: 30px 25px;
+        padding-bottom: 60px;
     }
     .text-container{
         width: 100%;
@@ -161,7 +187,8 @@ footer{
         display: inline-block;
     }
     .result-text{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
     .buttons-container{
         display: flex;
@@ -173,6 +200,9 @@ footer{
 @media only screen and (min-width: 992px){
     main{
         display: flex;
+    }
+    body{
+        padding-bottom: 60px;
     }
     .user-container{
         margin-left: 10%;
